@@ -1,8 +1,10 @@
 #pragma once
+#include<vector>
+using namespace std;
 class ScoreBoard
 {
 private:
-	int* scores;
+	vector<short>m_scores;
 	int nos;
 public:
 	ScoreBoard() {
@@ -11,7 +13,7 @@ public:
 	~ScoreBoard() {
 
 	}
-	void displayScores(int* n);
+	void displayScores(vector<short> scores);
 	void selectScore(int sc);  
 };
 
